@@ -2,11 +2,13 @@
 
 ## Chatbot Technical Details:
 
-#### Model: Ollama-llama3.2 (3B parameters)
+#### Model: llama3-8b-chinese-chat-ollama-q4(8B parameters)
 #### Dataset: Hugging Face Hub "MakTek/Customer_support_faqs_dataset"
 #### Embedding: Hugging Face Hub "hkunlp/instructor-large"
 #### Vector Database: Chroma
 #### Retrieval Search Type: Maximal Marginal Relevance (MMR)
+#### Language Supported: Multilingual, support most major languages
+#### Device: CUDA GPU
 #### Prompt:
 LLM is told that it is a customer representative from ABC-company and to use chat history and RAG context to answer questions
 If it does not know the answer, it is told to say it does not know and tell user to contact human service
@@ -24,6 +26,5 @@ The chatbot is not encouraged to be creative but use factual answers provided in
 - Start the inquiry with: Can I talk to someone? Followed by next query: When can I do that?
     - This question pair should show that the chatbot has memory and it can understand what it means by "that".
 - Other typical customer support questions:
-    - Is it possible place an order by phone?
-    - What is the refund policy?
-    - Where is my order?
+    - Can I request a refund? （or in chinese： 我可以申請退款嗎？）
+    - How do I track my order? （or in chinese： 怎樣查找我的訂單？）
