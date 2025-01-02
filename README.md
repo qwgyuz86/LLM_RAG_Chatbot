@@ -1,4 +1,4 @@
-# LLM_RAG_Chatbot
+# Multilingual_LLM_RAG_Chatbot
 
 ## Chatbot Technical Details:
 
@@ -10,7 +10,7 @@
 #### Language Supported: Multilingual, support most major languages
 #### Device: CUDA GPU
 #### Prompt:
-LLM is told that it is a customer representative from ABC-company and to use chat history and RAG context to answer questions
+LLM is told that it is a customer representative from ABC-company and to use chat history and RAG context to answer questions.
 If it does not know the answer, it is told to say it does not know and tell user to contact human service
 #### Memory:
 Chat memory is fed into the input so that the chatbot is aware of the context of the conversation.
@@ -28,3 +28,4 @@ The chatbot is not encouraged to be creative but use factual answers provided in
 - Other typical customer support questions:
     - Can I request a refund? （or in chinese： 我可以申請退款嗎？）
     - How do I track my order? （or in chinese： 怎樣查找我的訂單？）
+    - Or feel free to enter questions in French, Japanese, Spanish etc...
